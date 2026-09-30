@@ -17,21 +17,12 @@ from config import (
 # ChromaDB
 # ---------------------------------------------------------
 
-def get_collection():
-    """
-    Connect to the persistent ChromaDB collection.
+def get_collection(collection_name: str = COLLECTION_NAME):
+    """Return a persistent ChromaDB collection."""
 
-    Returns:
-        The Sentinel ChromaDB collection.
-    """
+    client = chromadb.PersistentClient(path=CHROMA_DIR)
 
-    client = chromadb.PersistentClient(
-        path=str(CHROMA_DIR)
-    )
-
-    return client.get_collection(
-        name=COLLECTION_NAME
-    )
+    return client.get_collection(name=collection_name)
 
 
 # ---------------------------------------------------------
@@ -59,7 +50,7 @@ def get_embedding_model():
 def retrieve(
     query: str,
     n_results: int = DEFAULT_RESULTS,
-    sources: list[str] | None = None,
+    sources: list[str] | None = None,collection_name: str = COLLECTION_NAME,
 ):
     """
     Retrieve the nearest document chunks.
@@ -89,12 +80,13 @@ def retrieve(
             "n_results must be greater than zero."
         )
 
-    collection = get_collection()
+    collection = get_collection(collection_name)
     model = get_embedding_model()
 
     query_embedding = model.encode(
         query
     ).tolist()
+
 
     query_kwargs = {
         "query_embeddings": [query_embedding],

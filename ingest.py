@@ -139,6 +139,7 @@ def create_chunks(
 
 def create_collection(
     reset: bool = False,
+    collection_name: str = COLLECTION_NAME,
 ):
     """
     Create or retrieve the persistent ChromaDB collection.
@@ -157,13 +158,13 @@ def create_collection(
     if reset:
         try:
             client.delete_collection(
-                name=COLLECTION_NAME
+                name=collection_name
             )
         except Exception:
             pass
 
     collection = client.get_or_create_collection(
-        name=COLLECTION_NAME,
+        name=collection_name,
         metadata={
             "hnsw:space": "cosine"
         },
@@ -230,6 +231,7 @@ def ingest(
     chunk_size: int = DEFAULT_CHUNK_SIZE,
     overlap: int = DEFAULT_CHUNK_OVERLAP,
     reset: bool = False,
+    collection_name: str = COLLECTION_NAME,
 ) -> int:
     """
     Run the complete document ingestion pipeline.
@@ -238,6 +240,7 @@ def ingest(
         chunk_size: Maximum characters per chunk.
         overlap: Characters shared between chunks.
         reset: Rebuild the ChromaDB collection.
+        collection_name: Name of the ChromaDB collection.
 
     Returns:
         Number of indexed chunks.
@@ -256,8 +259,9 @@ def ingest(
     print(f"Created {len(records)} chunks.")
 
     collection = create_collection(
-        reset=reset,
-    )
+    reset=reset,
+    collection_name=collection_name,
+)
 
     print(
         f"Loading embedding model: "
@@ -275,9 +279,9 @@ def ingest(
     )
 
     print(
-        f"Indexed {count} chunks into "
-        f"'{COLLECTION_NAME}'."
-    )
+    f"Indexed {count} chunks into "
+    f"'{collection_name}'."
+)
 
     return count
 
