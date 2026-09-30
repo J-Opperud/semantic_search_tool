@@ -1,0 +1,323 @@
+
+Skip to main content
+
+U.S. flag An official website of the United States Government
+Home
+
+    Home Revolutionary FAR Overhaul FAR Overhaul - FAR Part Deviation Guidance 
+
+FAR Overhaul - Part 11
+Part 11 - Describing Agency Needs
+
+Subpart 11.1 - Preaward
+
+11.100 Scope of part.
+
+11.101 Definitions.
+
+11.102 Policy.
+
+Subpart 11.2 - Selecting and Developing Requirements Documents
+
+11.201 Voluntary consensus standards.
+
+11.202 Standardization program.
+
+11.203 Market acceptance.
+
+11.204 Items peculiar to one manufacturer.
+
+Subpart 11.3 - Acceptable Material
+
+11.301 Policy.
+
+11.302 Contract clause.
+
+Subpart 11.4 - Liquidated Damages
+
+11.400 Scope.
+
+11.401 Policy.
+
+11.402 Procedures.
+
+11.403 Contract clauses.
+
+Subpart 11.5 - Priorities and Allocations
+
+11.500 Scope of subpart.
+
+11.501 Definitions.
+
+11.502 General.
+
+11.503 Procedures.
+
+11.504 Solicitation provision and contract clause.
+Subpart 11.1 - Preaward
+11.100 Scope of part.
+
+This part establishes standards for describing agency needs.
+11.101 Definitions.
+
+As used in this part-
+
+Reconditioned means restored to the original normal operating condition by readjustments and material replacement.
+
+Remanufactured means factory rebuilt to original specifications.
+11.102 Policy.
+
+(a) In fulfilling requirements of 10 U.S.C. 3206(a), 10 U.S.C. 3453, 41 U.S.C. 3306(a), and 41 U.S.C.3307, agencies shall—
+
+(1) Specify needs using market research to–
+
+(i) Promote full and open competition (see part 6), or maximum practicable competition when using simplified acquisition procedures, with due regard to the nature of the supplies or services to be acquired; and
+
+(ii) Only include restrictive provisions to the extent necessary to satisfy the needs of the agency or as authorized by law.
+
+(2) To the maximum extent practicable, ensure that acquisition officials-
+
+(i) State requirements with respect to an acquisition of supplies or services in terms of-
+
+(A) Functions to be performed;
+
+(B) Performance required; or
+
+(C) Essential physical characteristics;
+
+(ii) Define requirements in terms that enable and encourage offerors to supply commercial products or commercial services or, to the extent that commercial products suitable to meet the agency’s needs are not available, nondevelopmental items, in response to the agency solicitations;
+
+(iii) Provide offerors of commercial products, commercial services, and nondevelopmental items an opportunity to compete in any acquisition to fill such requirements;
+
+(iv) Require prime contractors and subcontractors at all tiers under the agency contracts to incorporate commercial products, commercial services, or nondevelopmental items as components of items supplied to the agency; and
+
+(v) Modify requirements in appropriate cases to ensure that the requirements can be met by commercial products or commercial services or, to the extent that commercial products suitable to meet the agency’s needs are not available, nondevelopmental items.
+
+(b) The Metric Conversion Act of 1975, as amended by the Omnibus Trade and Competitiveness Act of 1988 (15 U.S.C. 205a, et seq.), designates the metric system of measurement as the preferred system of weights and measures for United States trade and commerce, unless such use is impracticable or is likely to cause significant inefficiencies or loss of markets to United States firms.
+
+(c) To the extent practicable and consistent with subpart 9.5, potential offerors should be given an opportunity to comment on agency requirements or to recommend application and tailoring of requirements documents and alternative approaches. Requiring agencies should apply specifications, standards, and related documents initially for guidance only, making final decisions on the application and tailoring of these documents as a product of the design and development process. Requiring agencies should not dictate detailed design solutions prematurely (see 7.101 and 7.105(a)(8)).
+
+(d)
+
+(1) Agencies shall procure sustainable products in accordance with subpart 23.1.
+
+(2) Unless it is not practicable (see 23.102(a)) or an exception or exemption applies (see 23.105 and 23.106, respectively), agencies shall incorporate the use of sustainable products when—
+
+(i) Developing, reviewing, or revising Federal and military specifications, product descriptions (including commercial item descriptions) and standards;
+
+(ii) Describing Government requirements for products and services; and
+
+(iii) Developing source-selection factors.
+
+(e) Some or all of the performance levels or performance specifications in a solicitation may be identified as targets rather than as fixed or minimum requirements.
+
+(f) In accordance with section 508 of the Rehabilitation Act of 1973 (29 U.S.C. 794d), the contracting officer shall obtain from the requiring activity the requirement documents, which must identify—
+
+(1) The needs of current and future users with disabilities to determine how–
+
+(i) Users with disabilities will perform the functions supported by the information and communication technology (ICT);
+
+(ii) The ICT will be developed, installed, configured and maintained to support users with disabilities;
+
+(2) The applicable ICT accessibility standards (see subpart 39.2); and
+
+(3) Any ICT accessibility standards that cannot be met due to an exception or an exemption for any component or portion of the product (see 7.105(b)(5)(iv), 39.204, and 39.205).
+
+(g) Agencies shall not include in a solicitation a requirement that prohibits an offeror from allowing its employees to telecommute unless the contracting officer executes a written determination in accordance with FAR 7.108(a).
+Subpart 11.2 - Selecting and Developing Requirements Documents
+11.201 Voluntary consensus standards.
+
+In accordance with OMB Circular A-119, “Federal Participation in the Development and Use of Voluntary Consensus Standards and in Conformity Assessment Activities,” and Section 12(d) of the National Technology Transfer and Advancement Act of 1995, Pub. L. 104-113 (15 U.S.C. 272 note), agencies must use voluntary consensus standards, when they exist, in lieu of Government-unique standards, except where inconsistent with law or otherwise impractical. The private sector manages and administers voluntary consensus standards. Such standards are not mandated by law (e.g., industry standards such as ISO 9000, and IEEE 1680).
+11.202 Standardization program.
+
+Agencies shall select existing requirements documents or develop new requirements documents that meet the needs of the agency in accordance with the guidance contained in the Federal Standardization Manual, FSPM-0001; for DoD components, DoD Manual 4120.24, Defense Standardization Program (DSP) Procedures; and for IT standards and guidance, the Federal Information Processing Standards Publications (FIPS PUBS).
+11.203 Market acceptance.
+
+(a) 41 U.S.C. 3307(e) provides that, in accordance with agency procedures, the head of an agency may, under appropriate circumstances, require offerors to demonstrate that the items offered—
+
+(1) Have either–
+
+(i) Achieved commercial market acceptance; or
+
+(ii) Been satisfactorily supplied to an agency under current or recent contracts for the same or similar requirements; and
+
+(2) Otherwise meet the item description, specifications, or other criteria prescribed in the public notice and solicitation.
+
+(b) In developing criteria for demonstrating that an item has achieved commercial market acceptance, the contracting officer shall ensure the criteria in the solicitation—
+
+(1) Reflect the minimum need of the agency and are reasonably related to the demonstration of an item's acceptability to meet the agency's minimum need; and
+
+(2) Consider the entire relevant commercial market, including small business concerns.
+11.204 Items peculiar to one manufacturer.
+
+Agency requirements shall not be written to require a particular brand name, product, or a feature of a product, peculiar to one manufacturer, thereby precluding consideration of a product manufactured by another company, unless—
+
+(a)
+
+(1) The particular brand name, product, or feature is essential to the Government's requirements, and market research indicates other companies' similar products, or products lacking the particular feature, do not meet the agency’s needs or cannot be modified to meet the agency's minimum needs;
+
+(2)
+
+(i) The authority to contract without providing for full and open competition is supported by the required justifications and approvals (see 6.302-1); or
+
+(ii) The basis for not providing for maximum practicable competition is documented in the file (see 13.106-1(b)) or justified (see 13.501) when the acquisition is awarded using simplified acquisition procedures.
+
+(3) The documentation or justification is posted for acquisitions over $25,000. (See 5.102(a)(6).)
+
+(b) For multiple award schedule orders, see 8.405-6.
+
+(c) For orders under indefinite-quantity contracts, see 16.505(a)(4).
+Subpart 11.3 - Acceptable Material
+11.301 Policy.
+
+(a)
+
+(1) When acquiring products other than commercial products as defined in 2.101, agencies must require offerors to identify used, reconditioned, or remanufactured supplies; or unused former Government surplus property proposed for use under the contract. These supplies or property may not be used in contract performance unless authorized by the contracting officer.
+
+(2) When acquiring commercial products, the contracting officer must consider the customary practices in the industry for the product being acquired. The contracting officer may require offerors to provide information on used, reconditioned, or remanufactured supplies, or unused former Government surplus property proposed for use under the contract. The request for the information must be included in the solicitation, and to the maximum extent practicable must be limited to information or standards consistent with normal commercial practices.
+
+(b)
+
+(1) When the contracting officer needs additional information to determine whether supplies meet minimum recovered material or biobased standards stated in the solicitation, the contracting officer may require offerors to submit additional information on the recycled or biobased content or related standards. The request for the information must be included in the solicitation. When acquiring commercial products, limit the information to the maximum extent practicable to that available under normal commercial practices.
+
+(2) For biobased products, agencies may not require, as a condition of purchase of such products, the vendor or manufacturer to provide more data than would typically be provided by other business entities offering products for sale to the agency, other than data confirming the biobased content of a product (see 7 CFR 3201.8).
+11.302 Contract clause.
+
+Insert the clause at 52.211-5, Material Requirements, in solicitations and contracts for supplies that are not commercial products.
+Subpart 11.4 - Liquidated Damages
+11.400 Scope.
+
+(a) This subpart prescribes policies and procedures for using liquidated damages clauses in solicitations and contracts for supplies, services, research and development, and construction.
+
+(b) This subpart does not apply to liquidated damages-
+
+(1) For subcontracting plans (see 19.109);
+
+(2) Related to the Contract Work Hours and Safety Standards statute (see subpart 22.3); or
+
+(3) Related to paid sick leave for Federal contractors (see subpart 22.21).
+11.401 Policy.
+
+(a) The contracting officer must consider the potential impact on pricing, competition, and contract administration before using a liquidated damages clause. Use liquidated damages clauses only when—
+
+(1) The time of delivery or timely performance is so important that the Government may reasonably expect to suffer damage if the delivery or performance is delinquent; and
+
+(2) The extent or amount of such damage would be difficult or impossible to estimate accurately or prove.
+
+(b) Liquidated damages are not punitive and are not negative performance incentives (see 16.403-2). Liquidated damages are used to compensate the Government for probable damages. Therefore, the liquidated damages rate must be a reasonable forecast of just compensation for the harm that is caused by late delivery or untimely performance of the particular contract. Use a maximum amount or a maximum period for assessing liquidated damages if these limits reflect the maximum probable damage to the Government. Also, the contracting officer may use more than one liquidated damages rate when the contracting officer expects the probable damage to the Government to change over the contract period of performance.
+
+(c) The contracting officer must take all reasonable steps to mitigate liquidated damages. If the contract contains a liquidated damages clause and the contracting officer is considering terminating the contract for default, the contracting officer should seek expeditiously to obtain performance by the contractor or terminate the contract and repurchase (see subpart 49.4). Prompt contracting officer action will prevent excessive loss to defaulting contractors and protect the interests of the Government.
+
+(d) The head of the agency may reduce or waive the amount of liquidated damages assessed under a contract, if the Commissioner, Financial Management Service, or designee approves (see Treasury Order 145-10).
+11.402 Procedures.
+
+(a) Include the applicable liquidated damages clause and liquidated damages rates in solicitations when the contract will contain liquidated damages provisions.
+
+(b) Construction contracts with liquidated damages provisions must describe the rate(s) of liquidated damages assessed per day of delay. The rate(s) should include the estimated daily cost of Government inspection and superintendence. The rate(s) should also include an amount for other expected expenses associated with delayed completion such as—
+
+(1) Renting substitute property; or
+
+(2) Paying additional allowance for living quarters.
+11.403 Contract clauses.
+
+(a) Use the clause at 52.211-11, Liquidated Damages-Supplies, Services, or Research and Development, in fixed-price solicitations and contracts for supplies, services, or research and development when the contracting officer determines that liquidated damages are appropriate.
+
+(b) Use the clause at 52.211-12, Liquidated Damages-Construction, in solicitations and contracts for construction, other than cost-plus-fixed-fee, when the contracting officer determines that liquidated damages are appropriate. If the contract specifies more than one completion date for separate parts or stages of the work, revise paragraph (a) of the clause to state the amount of liquidated damages for delay of each separate part or stage of the work.
+
+(c) Use the clause at 52.211-13, Time Extensions, in solicitations and contracts for construction that use the clause at 52.211-12, Liquidated Damages-Construction, when that clause has been revised as provided in paragraph (b) of this section.
+Subpart 11.5 - Priorities and Allocations
+11.500 Scope of subpart.
+
+This subpart implements the Defense Priorities and Allocations System (DPAS), a Department of Commerce regulation in support of approved national defense, emergency preparedness, and energy programs (see 15 CFR part 700).
+11.501 Definitions.
+
+As used in this subpart—
+
+Approved program means a program determined in writing as necessary or appropriate for priorities and allocations support to promote the national defense by the Secretary of Defense, the Secretary of Energy, or the Secretary of Homeland Security, under the authority of the Defense Production Act and Executive Order 13603, or the Selective Service Act and Executive Order 12742.
+
+Delegate Agency means a Government agency authorized by delegation from the Department of Commerce to place priority ratings on contracts or orders needed to support approved programs.
+
+National defense means programs for military and energy production or construction, military or critical infrastructure assistance to any foreign nation, homeland security, stockpiling, space, and any directly related activity. Such term includes emergency preparedness activities conducted pursuant to Title VI of The Robert T. Stafford Disaster Relief and Emergency Assistance Act (42 U.S.C. 5121 et seq.) and critical infrastructure protection and restoration.(50 U.S.C. 4552).
+
+Rated order means a prime contract, a subcontract, or a purchase order in support of an approved program issued in accordance with the provisions of the DPAS regulation (15 CFR part 700).
+11.502 General.
+
+(a) Under Title I of the Defense Production Act of 1950 (50 U.S.C. 4501), the President is authorized to require preferential acceptance and performance of contracts and orders supporting certain approved national defense and energy programs and to allocate materials, services, and facilities in such a manner as to promote these approved programs.
+
+(b) The President delegated the priorities and allocations authorities of the Defense Production Act in Executive Order 13603. As part of that delegation, the President designated the Secretary of Commerce to administer the DPAS. For more information, check the DPAS website at:https://www.bis.doc.gov/index.php/other-areas/strategic-industries-and-economic-security-sies/defense-priorities-a-allocations-system-program-dpas.
+11.503 Procedures.
+
+(a) There are two levels of priority for rated orders established by the DPAS, identified by the rating symbols “DO” and “DX”. All DO rated orders have equal priority with each other and take preference over unrated orders. All DX rated orders have equal priority with each other and take preference over DO rated and unrated orders (see 15 CFR 700.11). The DPAS regulation contains provisions concerning the elements of a rated order (see 15 CFR 700.12); acceptance and rejection of rated orders (see 15 CFR 700.13); preferential scheduling (see 15 CFR 700.14); extension of priority ratings (flowdown) (see 15 CFR 700.15); changes or cancellations of priority ratings and rated orders (see 15 CFR 700.16); use of rated orders (see 15 CFR 700.17); and limitations on placing rated orders (see 15 CFR 700.18).
+
+(b) The Delegate Agencies have been given authority by the Department of Commerce to place rated orders in support of approved programs (see Schedule I of the DPAS). Other U.S. Government agencies, Canada, and foreign nations may apply for priority rating authority.
+
+(c) Rated orders shall be placed in accordance with the provisions of the DPAS.
+
+(d) Agency heads shall ensure compliance with the DPAS by contracting activities within their agencies.
+
+(e) Agency heads shall provide contracting activities with specific guidance on the issuance of rated orders in support of approved agency programs, including the general limitations and jurisdictional limitations on placing rated orders (see 15 CFR 700.18 and Executive Order 13603).
+
+(f) Contracting officers shall follow agency procedural instructions concerning the use of rated orders in support of approved agency programs.
+
+(g) Contracting officers, contractors, or subcontractors at any tier, that experience difficulty placing rated orders, obtaining timely delivery under rated orders, locating a contractor or supplier to fill a rated order, ensuring that rated orders receive preferential treatment by contractors or suppliers, or require rating authority for items not automatically ratable under the DPAS, should promptly seek special priorities assistance in accordance with agency procedures (see 15 CFR 700.50—700.55 and 700.80).
+
+(h) The Department of Commerce may take specific official actions (Ratings Authorizations, Directives, Letters of Understanding, Administrative Subpoenas, Demands for Information, and Inspection Authorizations) to implement or enforce the provisions of the DPAS (see 15 CFR 700.60-700.71).
+
+(i) Contracting officers shall report promptly any violations of the DPAS in accordance with agency procedures to the Office of Strategic Industries and Economic Security, U.S. Department of Commerce, Room 3876, Washington, DC 20230, Ref: DPAS; telephone: (202) 482-3634 or email DPAS@bis.doc.gov.
+11.504 Solicitation provision and contract clause.
+
+(a) Contracting officers shall insert the provision at 52.211-14, Notice of Priority Rating for National Defense, Emergency Preparedness, and Energy Program Use, in solicitations when the contract to be awarded will be a rated order.
+
+(b) Contracting officers shall insert the clause at 52.211-15, Defense Priority and Allocation Requirements, in contracts that are rated orders.
+Non-regulatory Resources
+
+The following are non-regulatory resources associated with FAR Part 11: 
+
+    Practitioner Album
+
+    FAR Companion Guide 
+
+     
+
+Caveat
+
+The FAR Council created deviations will include clauses and provisions currently required by statute and Executive Order.  OMB and the FAR Council will work with Congress to recommend statutory changes and with the White House to recommend rescission of requirements stemming from prior Executive Orders that are inconsistent with the goals of Executive Order 14275 to stop the inefficient use of American taxpayer dollars in federal procurement.  Any changes to Executive Orders or statute will be reflected when the Revolutionary FAR Overhaul turns to rule-making.
+ 
+Sign up for FAR News
+Share the FAR
+Facebook
+Twitter
+Contact
+
+    Useful Links
+    FAR Resources
+    Training
+    Acquisition Systems
+
+Contact Us/FAQs
+
+Privacy and Security Notice
+
+Accessibility Aids
+
+Last Updated 09/28/2026
+
+GSA logo
+
+ACQUISITION.GOV
+
+An official website of the General Services Administration
+
+    About GSA
+    Accessibility support
+    FOIA requests
+    No FEAR Act data
+    Office of the Inspector General
+    Performance reports
+    Privacy policy
+
+Looking for U.S. government information and services?
+Visit USA.gov
+
+    Tt
+
