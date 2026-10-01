@@ -11,6 +11,7 @@ from config import (
     DEFAULT_CHUNK_SIZE,
     DOCS_DIR,
     EMBEDDING_MODEL,
+    UPSERT_BATCH_SIZE,
 )
 
 # ---------------------------------------------------------
@@ -207,18 +208,25 @@ def index_documents(
         show_progress_bar=True,
     )
 
-    collection.upsert(
-        ids=[
-            record["id"]
-            for record in records
-        ],
-        documents=texts,
-        embeddings=embeddings.tolist(),
-        metadatas=[
-            record["metadata"]
-            for record in records
-        ],
-    )
+    for start in range(0, len(records), UPSERT_BATCH_SIZE):
+        end = start + UPSERT_BATCH_SIZE
+        batch = records[start:end]
+
+        collection.upsert(
+            ids=[
+                record["id"]
+                for record in batch
+            ],
+            documents=[
+                record["text"]
+                for record in batch
+            ],
+            embeddings=embeddings[start:end].tolist(),
+            metadatas=[
+                record["metadata"]
+                for record in batch
+            ],
+        )
 
     return len(records)
 

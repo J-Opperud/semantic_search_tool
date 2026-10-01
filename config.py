@@ -12,13 +12,13 @@ BASE_DIR = Path(__file__).resolve().parent
 DOCS_DIR = BASE_DIR / "docs_wip"
 CHROMA_DIR = BASE_DIR / "chroma_data"
 EXPERIMENTS_DIR = BASE_DIR / "experiments"
-
+EXPERIMENT_RESULTS_PATH = Path("experiment_results.json")
 
 # ---------------------------------------------------------
 # ChromaDB
 # ---------------------------------------------------------
-
-COLLECTION_NAME = "sentinel_documents"
+UPSERT_BATCH_SIZE = 5000
+COLLECTION_NAME = "docs"
 
 
 # ---------------------------------------------------------

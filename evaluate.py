@@ -3,9 +3,10 @@
 
 from dataclasses import dataclass, asdict
 from typing import Any
-from config import COLLECTION_NAME
+from config import COLLECTION_NAME, EXPERIMENT_RESULTS_PATH
 from search import retrieve
-
+import json
+from pathlib import Path
 
 # ---------------------------------------------------------------------------
 # Evaluation questions
@@ -242,6 +243,21 @@ def experiment_result_to_dict(result: ExperimentResult) -> dict[str, Any]:
     """Convert an experiment result into a JSON-friendly dictionary."""
 
     return asdict(result)
+def save_experiment_results(
+    results: list[ExperimentResult],
+    path: Path,
+) -> None:
+    """Save experiment results as JSON."""
+
+    data = [
+        experiment_result_to_dict(result)
+        for result in results
+    ]
+
+    path.write_text(
+        json.dumps(data, indent=2),
+        encoding="utf-8",
+    )
 
 def run_chunking_experiment(
     n_results: int = 3,
@@ -265,7 +281,7 @@ def run_chunking_experiment(
 
     for config in EXPERIMENT_CONFIGS:
         collection_name = (
-            f"experiment_{config.chunk_size}_{config.overlap}"
+            f"s_experiment_{config.chunk_size}_{config.overlap}"
         )
 
         # Import here to avoid creating a circular import at module load time.
@@ -291,6 +307,12 @@ def run_chunking_experiment(
                     results=evaluation["results"],
                 )
             )
+    save_experiment_results(
+        experiment_results,
+        EXPERIMENT_RESULTS_PATH,
+    )
 
     return experiment_results
+
+    
 
