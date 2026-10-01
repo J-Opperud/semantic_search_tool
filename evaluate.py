@@ -3,7 +3,7 @@
 
 from dataclasses import dataclass, asdict
 from typing import Any
-
+from config import COLLECTION_NAME
 from search import retrieve
 
 
@@ -76,11 +76,14 @@ def relevance_to_score(rating: str | None) -> int | None:
 # Evaluation
 # ---------------------------------------------------------------------------
 
-def run_evaluation(n_results: int = 3) -> list[dict[str, Any]]:
+def run_evaluation(
+    n_results: int = 3,
+    collection_name: str = COLLECTION_NAME,
+) -> list[dict[str, Any]]:
     """Run the standard evaluation questions against the current index.
-
     Args:
         n_results: Number of results to retrieve for each question.
+        collection_name: Name of the ChromaDB collection to evaluate.
 
     Returns:
         A list containing each question and its retrieved results.
@@ -95,7 +98,8 @@ def run_evaluation(n_results: int = 3) -> list[dict[str, Any]]:
         results = retrieve(
             query=question,
             n_results=n_results,
-        )
+            collection_name=collection_name,
+            )
 
         evaluation_results.append(
             {
@@ -238,4 +242,55 @@ def experiment_result_to_dict(result: ExperimentResult) -> dict[str, Any]:
     """Convert an experiment result into a JSON-friendly dictionary."""
 
     return asdict(result)
+
+def run_chunking_experiment(
+    n_results: int = 3,
+) -> list[ExperimentResult]:
+    """Run the evaluation questions against each chunking configuration.
+
+    Each configuration receives its own ChromaDB collection so the
+    experiment does not modify Sentinel's normal search index.
+
+    Args:
+        n_results: Number of results retrieved for each question.
+
+    Returns:
+        A list of ExperimentResult objects.
+    """
+
+    if n_results <= 0:
+        raise ValueError("n_results must be greater than zero.")
+
+    experiment_results = []
+
+    for config in EXPERIMENT_CONFIGS:
+        collection_name = (
+            f"experiment_{config.chunk_size}_{config.overlap}"
+        )
+
+        # Import here to avoid creating a circular import at module load time.
+        from ingest import ingest
+
+        ingest(
+            chunk_size=config.chunk_size,
+            overlap=config.overlap,
+            reset=True,
+            collection_name=collection_name,
+        )
+
+        evaluation_results = run_evaluation(
+            n_results=n_results,
+            collection_name=collection_name,
+        )
+
+        for evaluation in evaluation_results:
+            experiment_results.append(
+                create_experiment_result(
+                    config=config,
+                    question=evaluation["question"],
+                    results=evaluation["results"],
+                )
+            )
+
+    return experiment_results
 
