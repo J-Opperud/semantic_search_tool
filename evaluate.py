@@ -8,9 +8,9 @@ from search import retrieve
 import json
 from pathlib import Path
 
-# ---------------------------------------------------------------------------
+
 # Evaluation questions
-# ---------------------------------------------------------------------------
+# -------------------------------------------
 
 EVALUATION_QUESTIONS = [
     "What is the purpose of the Federal Acquisition Regulation?",
@@ -125,6 +125,9 @@ class ExperimentResult:
     overlap: int
     question: str
     results: list[dict[str, Any]]
+    ratings: list[str | None] | None = None
+
+
 
 
 def create_experiment_result(
@@ -140,7 +143,9 @@ def create_experiment_result(
         overlap=config.overlap,
         question=question,
         results=results,
+        ratings=[None] * len(results),
     )
+
 
 
 # ---------------------------------------------------------------------------
@@ -243,6 +248,22 @@ def experiment_result_to_dict(result: ExperimentResult) -> dict[str, Any]:
     """Convert an experiment result into a JSON-friendly dictionary."""
 
     return asdict(result)
+
+
+def load_experiment_results(
+    path: Path,
+) -> list[dict[str, Any]]:
+    """Load saved experiment results from JSON."""
+    
+    if not path.exists():
+        return []
+
+    return json.loads(
+        path.read_text(
+            encoding="utf-8"
+        )
+    )
+
 def save_experiment_results(
     results: list[ExperimentResult],
     path: Path,
