@@ -83,10 +83,10 @@ def retrieve(
     collection = get_collection(collection_name)
     model = get_embedding_model()
 
-    query_embedding = model.encode(
-        query
-    ).tolist()
+    query_embedding = model.encode(query)
 
+    if hasattr(query_embedding, "tolist"):
+        query_embedding = query_embedding.tolist()
 
     query_kwargs = {
         "query_embeddings": [query_embedding],
@@ -167,6 +167,7 @@ def search(
     n_results: int = DEFAULT_RESULTS,
     threshold: float | None = None,
     sources: list[str] | None = None,
+    collection_name: str = COLLECTION_NAME,
 ):
     """
     Retrieve and optionally filter semantic search results.
@@ -183,10 +184,11 @@ def search(
     """
 
     results = retrieve(
-        query=query,
-        n_results=n_results,
-        sources=sources,
-    )
+    query=query,
+    n_results=n_results,
+    sources=sources,
+    collection_name=collection_name,
+)
 
     return filter_results(
         results,

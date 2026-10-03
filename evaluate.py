@@ -218,27 +218,53 @@ def calculate_mean_relevance(
 
 
 def summarize_experiment(
-    ratings_by_configuration: dict[str, list[str | None]],
+    results: list[dict[str, Any]],
+    k: int = 3,
 ) -> dict[str, dict[str, float]]:
-    """Create comparison metrics for each experiment configuration."""
+    """Create comparison metrics for each experiment configuration.
+
+    Each result represents one evaluation question under one
+    experiment configuration.
+    """
+
+    if k <= 0:
+        raise ValueError("k must be greater than zero.")
+
+    grouped: dict[str, list[float]] = {}
+
+    for result in results:
+        configuration = result["configuration"]
+        ratings = result.get("ratings") or []
+
+        precision = calculate_precision_at_k(
+            ratings,
+            k=k,
+        )
+
+        mean_relevance = calculate_mean_relevance(
+            ratings,
+            k=k,
+        )
+
+        grouped.setdefault(configuration, []).append(
+            (precision, mean_relevance)
+        )
 
     summary = {}
 
-    for configuration, ratings in ratings_by_configuration.items():
+    for configuration, metrics in grouped.items():
         summary[configuration] = {
-            "precision_at_3": calculate_precision_at_k(
-                ratings,
-                k=3,
-            ),
-            "mean_relevance": calculate_mean_relevance(
-                ratings,
-                k=3,
-            ),
+            "precision_at_3": sum(
+                metric[0] for metric in metrics
+            ) / len(metrics),
+            "mean_relevance": (
+                sum(metric[1] for metric in metrics) 
+                / len(metrics)
+                / 2
+                ),
         }
 
     return summary
-
-
 # ---------------------------------------------------------------------------
 # Serialization helper
 # ---------------------------------------------------------------------------

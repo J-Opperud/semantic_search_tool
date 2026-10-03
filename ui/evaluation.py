@@ -45,7 +45,7 @@ def render_evaluation():
 
     if run_evaluation_button:
 
-        from evaluate import run_evaluation
+       
 
         with st.spinner(
             "Running evaluation questions..."

@@ -1,5 +1,8 @@
 from evaluate import load_experiment_results
 import json
+import pytest
+
+from evaluate import summarize_experiment
 
 from evaluate import (
     ExperimentResult,
@@ -142,3 +145,39 @@ def test_experiment_results_persist(tmp_path):
             "ratings": ["Relevant"],
         }
     ]
+
+def test_summarize_experiment_averages_queries():
+    """Average metrics across evaluation questions."""
+
+    results = [
+        {
+            "configuration": "Small",
+            "question": "Question 1",
+            "ratings": [
+                "Relevant",
+                "Relevant",
+                "Not Relevant",
+            ],
+        },
+        {
+            "configuration": "Small",
+            "question": "Question 2",
+            "ratings": [
+                "Relevant",
+                "Not Relevant",
+                "Not Relevant",
+            ],
+        },
+    ]
+
+    summary = summarize_experiment(results)
+
+    assert summary["Small"]["precision_at_3"] == 0.5
+    assert summary["Small"]["mean_relevance"] == 0.5
+
+
+def test_summarize_experiment_rejects_invalid_k():
+    """Reject invalid evaluation cutoffs."""
+
+    with pytest.raises(ValueError):
+        summarize_experiment([], k=0)
