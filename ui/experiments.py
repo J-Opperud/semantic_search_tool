@@ -4,9 +4,12 @@ from config import EXPERIMENT_RESULTS_PATH
 from evaluate import (
     load_experiment_results,
     run_chunking_experiment,
+    update_experiment_ratings
 )
 
 def render_experiments():
+    ratings_by_result = {}
+    
     st.header("📈 Experiments")
     
     st.write(
@@ -89,7 +92,44 @@ def render_experiments():
 
                     st.write(chunk["text"])
 
-                st.divider()
+                    rating_options = [
+                        "Not Relevant",
+                        "Partially Relevant",
+                        "Relevant",
+                        ]
+                    current_rating = None
+
+                    if result.get("ratings"):
+                        current_rating = result["ratings"][result_number - 1]
+                    
+                    rating = st.selectbox(
+                        
+                        "Relevance",
+                        options=rating_options,
+                        index=(
+                            rating_options.index(current_rating)
+                            if current_rating in rating_options
+                            else 0
+                        ),
+                        
+                        key=(
+                            f"{result['configuration']}_" 
+                            f"{result['question']}_" 
+                            f"{result_number}" 
+                            ),
+                    ) 
+                    
+                    key = (
+                        result["configuration"], 
+                        result["question"], 
+                        ) 
+                    
+                    if key not in ratings_by_result: 
+                        ratings_by_result[key] = [] 
+                        ratings_by_result[key].append(rating) 
+                        
+                        
+                        st.divider()
 
     else:
 

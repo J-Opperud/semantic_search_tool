@@ -21,9 +21,8 @@ EVALUATION_QUESTIONS = [
 ]
 
 
-# ---------------------------------------------------------------------------
 # Experiment configuration
-# ---------------------------------------------------------------------------
+# ----------------------------------------
 
 @dataclass(frozen=True)
 class ChunkConfig:
@@ -53,9 +52,8 @@ EXPERIMENT_CONFIGS = [
 ]
 
 
-# ---------------------------------------------------------------------------
 # Relevance
-# ---------------------------------------------------------------------------
+# -----------------------------------------------
 
 RELEVANCE_SCORES = {
     "Not Relevant": 0,
@@ -73,9 +71,9 @@ def relevance_to_score(rating: str | None) -> int | None:
     return RELEVANCE_SCORES.get(rating)
 
 
-# ---------------------------------------------------------------------------
+
 # Evaluation
-# ---------------------------------------------------------------------------
+# -----------------------------------------
 
 def run_evaluation(
     n_results: int = 3,
@@ -112,9 +110,9 @@ def run_evaluation(
     return evaluation_results
 
 
-# ---------------------------------------------------------------------------
+
 # Experiment result structures
-# ---------------------------------------------------------------------------
+# --------------------------------------
 
 @dataclass
 class ExperimentResult:
@@ -148,9 +146,9 @@ def create_experiment_result(
 
 
 
-# ---------------------------------------------------------------------------
+
 # Relevance metrics
-# ---------------------------------------------------------------------------
+# -----------------------------------------------
 
 def calculate_precision_at_k(
     ratings: list[str | None],
@@ -274,7 +272,8 @@ def save_experiment_results(
         experiment_result_to_dict(result)
         for result in results
     ]
-
+    path.parent.mkdir(parents=True, exist_ok=True)
+    
     path.write_text(
         json.dumps(data, indent=2),
         encoding="utf-8",
@@ -335,5 +334,26 @@ def run_chunking_experiment(
 
     return experiment_results
 
+def update_experiment_ratings(
+    ratings_by_result: dict[tuple[str, str], list[str | None]],
+    path: Path,
+) -> None:
+    """Update human relevance ratings for saved experiment results."""
+
+    results = load_experiment_results(path)
+
+    for result in results:
+        key = (
+            result["configuration"],
+            result["question"],
+        )
+
+        if key in ratings_by_result:
+            result["ratings"] = ratings_by_result[key]
+
+    path.write_text(
+        json.dumps(results, indent=2),
+        encoding="utf-8",
+    )
     
 

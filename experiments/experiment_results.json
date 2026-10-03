@@ -1,0 +1,467 @@
+[
+  {
+    "configuration": "Small",
+    "chunk_size": 150,
+    "overlap": 25,
+    "question": "What is the purpose of the Federal Acquisition Regulation?",
+    "results": [
+      {
+        "text": "rsuant to the Federal Acquisition Regulation in this chapter and contracts for the purchase of Federal personal property pursuant to Federal Managemen",
+        "source": "far_part_09_contractor_qualifications.txt",
+        "chunk_index": 984,
+        "distance": 0.29687774181365967
+      },
+      {
+        "text": "contracts pursuant to the Federal Acquisition Regulation in this chapter and contracts for the purchase of Federal personal property pursuant to the",
+        "source": "far_part_09_contractor_qualifications.txt",
+        "chunk_index": 807,
+        "distance": 0.3180825114250183
+      },
+      {
+        "text": "ncrease the Government\u2019s cost or seriously impede the attainment of acquisition objectives. An incentive subcontracting clause (see 52.219-10, Incenti",
+        "source": "far_part_19_small_business.txt",
+        "chunk_index": 1425,
+        "distance": 0.3547847270965576
+      }
+    ],
+    "ratings": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "configuration": "Small",
+    "chunk_size": 150,
+    "overlap": 25,
+    "question": "What does the FAR mean by market research?",
+    "results": [
+      {
+        "text": "is still current, accurate, and relevant. Market research involves obtaining information specific to the product or service being acquired and should",
+        "source": "far_part_10_market_research.txt",
+        "chunk_index": 45,
+        "distance": 0.2241407036781311
+      },
+      {
+        "text": "s.\n\n \n\nMarket research means collecting and analyzing information about capabilities within the market to satisfy agency needs.\n\nMaster solicitation m",
+        "source": "far_part_02_definitions.txt",
+        "chunk_index": 474,
+        "distance": 0.28865307569503784
+      },
+      {
+        "text": "sitions begin with a description of the Government\u2019s needs stated in terms sufficient to allow conduct of market research.\n\n(b) Market research is the",
+        "source": "far_part_10_market_research.txt",
+        "chunk_index": 40,
+        "distance": 0.313632607460022
+      }
+    ],
+    "ratings": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "configuration": "Small",
+    "chunk_size": 150,
+    "overlap": 25,
+    "question": "When should an agency conduct market research during the acquisition process?",
+    "results": [
+      {
+        "text": "2 for the acquisition.\n\n(e) The head of the agency shall document the results of market research in a manner appropriate to the size and complexity of",
+        "source": "far_part_10_market_research.txt",
+        "chunk_index": 76,
+        "distance": 0.2967466115951538
+      },
+      {
+        "text": "am to use for an acquisition, the contracting officer should consider, at a minimum-\n\n(1) Results of market research that was done to determine if the",
+        "source": "far_part_19_small_business.txt",
+        "chunk_index": 285,
+        "distance": 0.319752037525177
+      },
+      {
+        "text": "sults of market research to\u2013\n\n(i) Determine if sources capable of satisfying the agency\u2019s requirements exist;\n\n(ii) Determine if commercial products o",
+        "source": "far_part_10_market_research.txt",
+        "chunk_index": 20,
+        "distance": 0.3532108664512634
+      }
+    ],
+    "ratings": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "configuration": "Small",
+    "chunk_size": 150,
+    "overlap": 25,
+    "question": "What factors are considered when determining whether a prospective contractor is responsible?",
+    "results": [
+      {
+        "text": "). Determinations of prospective subcontractor responsibility may affect the Government's determination of the prospective prime contractor's responsi",
+        "source": "far_part_09_contractor_qualifications.txt",
+        "chunk_index": 111,
+        "distance": 0.31017112731933594
+      },
+      {
+        "text": "rt  42.15). A prospective contractor shall not be determined responsible or nonresponsible solely on the basis of a lack of relevant performance histo",
+        "source": "far_part_09_contractor_qualifications.txt",
+        "chunk_index": 64,
+        "distance": 0.310685396194458
+      },
+      {
+        "text": "ture that it affects the present responsibility of the contractor or subcontractor.\n9.406-3 Procedures.\n\n(a) Investigation and referral. Agencies shal",
+        "source": "far_part_09_contractor_qualifications.txt",
+        "chunk_index": 860,
+        "distance": 0.3155876398086548
+      }
+    ],
+    "ratings": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "configuration": "Small",
+    "chunk_size": 150,
+    "overlap": 25,
+    "question": "What requirements or considerations apply to small businesses in federal contracting?",
+    "results": [
+      {
+        "text": "usiness) before considering a small business set-aside.\n\n(4) The contracting officer shall comply with the specific program eligibility requirements i",
+        "source": "far_part_19_small_business.txt",
+        "chunk_index": 935,
+        "distance": 0.27258676290512085
+      },
+      {
+        "text": "ctively identify the capabilities of small businesses and new entrants into Federal contracting that are available in the marketplace for meeting the",
+        "source": "far_part_10_market_research.txt",
+        "chunk_index": 16,
+        "distance": 0.2765325903892517
+      },
+      {
+        "text": "at 15 U.S.C. 644(k).\n\n(d) Small business specialists shall be appointed and act in accordance with agency regulations.\n\n(1) The contracting activity s",
+        "source": "far_part_19_small_business.txt",
+        "chunk_index": 194,
+        "distance": 0.3255873918533325
+      }
+    ],
+    "ratings": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "configuration": "Baseline",
+    "chunk_size": 300,
+    "overlap": 50,
+    "question": "What is the purpose of the Federal Acquisition Regulation?",
+    "results": [
+      {
+        "text": "the use of the Federal Government through purchase or lease, whether the supplies or services are already in existence or must be created, developed, demonstrated, and evaluated. Acquisition begins at the point when agency needs are established and includes the description of requirements to satisfy",
+        "source": "far_part_02_definitions.txt",
+        "chunk_index": 7,
+        "distance": 0.3633441925048828
+      },
+      {
+        "text": "Print Part 10 - Market Research page.\n    Download Part 10 - Market Research page.\n\n\u00ab PreviousNext \u00bb\nPart 10 - Market Research\n\n10.000 Scope of part.\n\n10.001 Policy.\n\n10.002 Procedures.\n\n10.003 Contract clause.\nParent topic: Federal Acquisition Regulation\n10.000 Scope of part.\n\nThis part prescri",
+        "source": "far_part_10_market_research.txt",
+        "chunk_index": 1,
+        "distance": 0.38778799772262573
+      },
+      {
+        "text": "rsuant to the Federal Acquisition Regulation in this chapter and contracts for the purchase of Federal personal property pursuant to Federal Management Regulation (FMR) in 41 CFR part 102-38, that official shall consider simultaneously suspending the contractor from the award of acquisition contract",
+        "source": "far_part_09_contractor_qualifications.txt",
+        "chunk_index": 492,
+        "distance": 0.3891715407371521
+      }
+    ],
+    "ratings": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "configuration": "Baseline",
+    "chunk_size": 300,
+    "overlap": 50,
+    "question": "What does the FAR mean by market research?",
+    "results": [
+      {
+        "text": "available to meet the Government\u2019s needs or could be modified to meet the Government\u2019s needs.\n\n(1) The extent of market research will vary, depending on such factors as urgency, estimated dollar value, complexity, and past experience. The contracting officer may use market research conducted within",
+        "source": "far_part_10_market_research.txt",
+        "chunk_index": 21,
+        "distance": 0.35195422172546387
+      },
+      {
+        "text": "sitions begin with a description of the Government\u2019s needs stated in terms sufficient to allow conduct of market research.\n\n(b) Market research is then conducted to determine if commercial products, commercial services, or nondevelopmental items are available to meet the Government\u2019s needs or could",
+        "source": "far_part_10_market_research.txt",
+        "chunk_index": 20,
+        "distance": 0.37161242961883545
+      },
+      {
+        "text": "sults of market research to\u2013\n\n(i) Determine if sources capable of satisfying the agency\u2019s requirements exist;\n\n(ii) Determine if commercial products or commercial services, or, to the extent commercial products suitable to meet the agency\u2019s needs are not available, nondevelopmental items are availab",
+        "source": "far_part_10_market_research.txt",
+        "chunk_index": 10,
+        "distance": 0.3751356601715088
+      }
+    ],
+    "ratings": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "configuration": "Baseline",
+    "chunk_size": 300,
+    "overlap": 50,
+    "question": "When should an agency conduct market research during the acquisition process?",
+    "results": [
+      {
+        "text": "a written plan.\n7.102 Policy.\n\n(a) Agencies shall perform acquisition planning and conduct market research (see part  10) for all acquisitions in order to promote and provide for\u2014\n\n(1) Acquisition of commercial products or commercial services, or to the extent that commercial products suitable to me",
+        "source": "far_part_07_acquisition_planning.txt",
+        "chunk_index": 13,
+        "distance": 0.33500707149505615
+      },
+      {
+        "text": "2 for the acquisition.\n\n(e) The head of the agency shall document the results of market research in a manner appropriate to the size and complexity of the acquisition.\n10.003 Contract clause.\n\nThe contracting officer shall insert the clause at 52.210-1, Market Research, in solicitations and contract",
+        "source": "far_part_10_market_research.txt",
+        "chunk_index": 38,
+        "distance": 0.3400886654853821
+      },
+      {
+        "text": "194.1 (see subpart  39.2).\n\n(b) When conducting market research, agencies should not request potential sources to submit more than the minimum information necessary.\n\n(c) If an agency contemplates consolidation or bundling, the agency\u2014\n\n(1) When performing market research, should consult with the ag",
+        "source": "far_part_10_market_research.txt",
+        "chunk_index": 16,
+        "distance": 0.3608638644218445
+      }
+    ],
+    "ratings": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "configuration": "Baseline",
+    "chunk_size": 300,
+    "overlap": 50,
+    "question": "What factors are considered when determining whether a prospective contractor is responsible?",
+    "results": [
+      {
+        "text": "rt  42.15). A prospective contractor shall not be determined responsible or nonresponsible solely on the basis of a lack of relevant performance history, except as provided in 9.104-2;\n\n(d) Have a satisfactory record of integrity and business ethics (for example, see subpart  42.15);\n\n(e) Have the n",
+        "source": "far_part_09_contractor_qualifications.txt",
+        "chunk_index": 32,
+        "distance": 0.29102635383605957
+      },
+      {
+        "text": "official.\n\n(4) Whether the contractor (including an individual) cooperated fully with Government agencies during the investigation and any court or administrative action.\n\n(5) Whether the contractor (including an individual) has paid or has agreed to pay all criminal, civil, and administrative liab",
+        "source": "far_part_09_contractor_qualifications.txt",
+        "chunk_index": 386,
+        "distance": 0.34886670112609863
+      },
+      {
+        "text": "ture that it affects the present responsibility of the contractor or subcontractor.\n9.406-3 Procedures.\n\n(a) Investigation and referral. Agencies shall establish procedures for the prompt reporting, investigation, and referral to the suspending and debarring official of matters appropriate for that",
+        "source": "far_part_09_contractor_qualifications.txt",
+        "chunk_index": 430,
+        "distance": 0.35787928104400635
+      }
+    ],
+    "ratings": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "configuration": "Baseline",
+    "chunk_size": 300,
+    "overlap": 50,
+    "question": "What requirements or considerations apply to small businesses in federal contracting?",
+    "results": [
+      {
+        "text": "requires each agency with contracting authority to establish an Office of Small and Disadvantaged Business Utilization (see section 15(k) of the Small Business Act). For the Department of Defense, in accordance with section 904 of Public Law 109-163 (10 U.S.C. 144 note), the Office of Small and Dis",
+        "source": "far_part_19_small_business.txt",
+        "chunk_index": 76,
+        "distance": 0.3270638585090637
+      },
+      {
+        "text": "re that contracting and technical personnel maintain knowledge of small business program requirements and take all reasonable action to increase participation in their activities\u2019 contracting processes by these businesses.\n\n(c) The Small Business Act requires each agency with contracting authority t",
+        "source": "far_part_19_small_business.txt",
+        "chunk_index": 75,
+        "distance": 0.3409203290939331
+      },
+      {
+        "text": "the Small Business Jobs Act of 2010 ( 15 U.S.C. 644(r)(1)), contracting officers may, at their discretion, set aside a portion or portions of a multiple-award contract, except for construction, for any of the small business concerns identified at 19.000(a)(3) when\u2014\n\n(1) Market research indicates tha",
+        "source": "far_part_19_small_business.txt",
+        "chunk_index": 417,
+        "distance": 0.35292500257492065
+      }
+    ],
+    "ratings": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "configuration": "Large",
+    "chunk_size": 600,
+    "overlap": 100,
+    "question": "What is the purpose of the Federal Acquisition Regulation?",
+    "results": [
+      {
+        "text": "rsuant to the Federal Acquisition Regulation in this chapter and contracts for the purchase of Federal personal property pursuant to Federal Management Regulation (FMR) in 41 CFR part 102-38, that official shall consider simultaneously suspending the contractor from the award of acquisition contracts and from the purchase of Federal personal property.\n\n(2) When suspending a contractor from the award of acquisition contracts and from the purchase of Federal personal property, the suspension notice shall so indicate and the appropriate FAR and FMR citations shall be included.\n9.407-2 Causes for",
+        "source": "far_part_09_contractor_qualifications.txt",
+        "chunk_index": 246,
+        "distance": 0.3981194496154785
+      },
+      {
+        "text": "General Services Administration assistance and OMB guidance.\n\n7.404 Contract clause.\n\nSubpart 7.5 - Inherently Governmental Functions\n\n7.500 Scope of subpart.\n\n7.501 [Reserved]\n\n7.502 Applicability.\n\n7.503 Policy.\nParent topic: Federal Acquisition Regulation\n7.000 Scope of part.\n\nThis part prescribes policies and procedures for-\n\n(a) Developing acquisition plans;\n\n(b) Determining whether to use commercial or Government resources for acquisition of supplies or services;\n\n(c) Deciding whether it is more economical to lease equipment rather than purchase it; and\n\n(d) Determining whether function",
+        "source": "far_part_07_acquisition_planning.txt",
+        "chunk_index": 3,
+        "distance": 0.4158942699432373
+      },
+      {
+        "text": "ard.\n\n15.508 Discovery of mistakes.\n\n15.509 Forms.\n\nSubpart 15.6 - Unsolicited Proposals\n\n15.600 Scope of subpart.\n\n15.601 Definitions.\n\n15.602 Policy.\n\n15.603 General.\n\n15.604 Agency points of contact.\n\n15.605 Content of unsolicited proposals.\n\n15.606 Agency procedures.\n\n15.606-1 Receipt and initial review.\n\n15.606-2 Evaluation.\n\n15.607 Criteria for acceptance and negotiation of an unsolicited proposal.\n\n15.608 Prohibitions.\n\n15.609 Limited use of data.\nParent topic: Federal Acquisition Regulation\n15.000 Scope of part.\n\nThis part prescribes policies and procedures governing competitive and no",
+        "source": "far_part_15_contracting_negotiation.txt",
+        "chunk_index": 7,
+        "distance": 0.43998730182647705
+      }
+    ],
+    "ratings": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "configuration": "Large",
+    "chunk_size": 600,
+    "overlap": 100,
+    "question": "What does the FAR mean by market research?",
+    "results": [
+      {
+        "text": "sitions begin with a description of the Government\u2019s needs stated in terms sufficient to allow conduct of market research.\n\n(b) Market research is then conducted to determine if commercial products, commercial services, or nondevelopmental items are available to meet the Government\u2019s needs or could be modified to meet the Government\u2019s needs.\n\n(1) The extent of market research will vary, depending on such factors as urgency, estimated dollar value, complexity, and past experience. The contracting officer may use market research conducted within 18 months before the award of any task or delivery",
+        "source": "far_part_10_market_research.txt",
+        "chunk_index": 10,
+        "distance": 0.3159990906715393
+      },
+      {
+        "text": "officer may use market research conducted within 18 months before the award of any task or delivery order if the information is still current, accurate, and relevant. Market research involves obtaining information specific to the product or service being acquired and should include-\n\n(i) Whether the Government\u2019s needs can be met by-\n\n(A) Products or services of a type customarily available in the commercial marketplace;\n\n(B) Products or services of a type customarily available in the commercial marketplace with modifications; or\n\n(C) Products or services used exclusively for governmental purp",
+        "source": "far_part_10_market_research.txt",
+        "chunk_index": 11,
+        "distance": 0.323253870010376
+      },
+      {
+        "text": "any laws and regulations unique to the item being acquired;\n\n(v) The availability of items that contain recovered materials and items that are energy efficient;\n\n(vi) The distribution and support capabilities of potential suppliers, including alternative arrangements and cost estimates; and\n\n(vii) Whether the Government's needs can be met by small business concerns that will likely submit a competitive offer at fair market prices (see part  19).\n\n(2) Techniques for conducting market research may include any or all of the following:\n\n(i) Contacting knowledgeable individuals in Government and i",
+        "source": "far_part_10_market_research.txt",
+        "chunk_index": 13,
+        "distance": 0.43039625883102417
+      }
+    ],
+    "ratings": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "configuration": "Large",
+    "chunk_size": 600,
+    "overlap": 100,
+    "question": "When should an agency conduct market research during the acquisition process?",
+    "results": [
+      {
+        "text": "officer may use market research conducted within 18 months before the award of any task or delivery order if the information is still current, accurate, and relevant. Market research involves obtaining information specific to the product or service being acquired and should include-\n\n(i) Whether the Government\u2019s needs can be met by-\n\n(A) Products or services of a type customarily available in the commercial marketplace;\n\n(B) Products or services of a type customarily available in the commercial marketplace with modifications; or\n\n(C) Products or services used exclusively for governmental purp",
+        "source": "far_part_10_market_research.txt",
+        "chunk_index": 11,
+        "distance": 0.35254836082458496
+      },
+      {
+        "text": "sitions begin with a description of the Government\u2019s needs stated in terms sufficient to allow conduct of market research.\n\n(b) Market research is then conducted to determine if commercial products, commercial services, or nondevelopmental items are available to meet the Government\u2019s needs or could be modified to meet the Government\u2019s needs.\n\n(1) The extent of market research will vary, depending on such factors as urgency, estimated dollar value, complexity, and past experience. The contracting officer may use market research conducted within 18 months before the award of any task or delivery",
+        "source": "far_part_10_market_research.txt",
+        "chunk_index": 10,
+        "distance": 0.3585214614868164
+      },
+      {
+        "text": "search appropriate to the circumstances\u2013\n\n(i) Before developing new requirements documents for an acquisition by that agency;\n\n(ii) Before soliciting offers for acquisitions with an estimated value in excess of the simplified acquisition threshold;\n\n(iii) Before soliciting offers for acquisitions with an estimated value less than the simplified acquisition threshold when adequate information is not available and the circumstances justify its cost;\n\n(iv) Before soliciting offers for acquisitions that could lead to consolidation or bundling (15 U.S.C. 644(e)(2)(A)) and 15 U.S.C. 657q);\n\n(v) Befo",
+        "source": "far_part_10_market_research.txt",
+        "chunk_index": 2,
+        "distance": 0.3671227693557739
+      }
+    ],
+    "ratings": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "configuration": "Large",
+    "chunk_size": 600,
+    "overlap": 100,
+    "question": "What factors are considered when determining whether a prospective contractor is responsible?",
+    "results": [
+      {
+        "text": "rt  42.15). A prospective contractor shall not be determined responsible or nonresponsible solely on the basis of a lack of relevant performance history, except as provided in 9.104-2;\n\n(d) Have a satisfactory record of integrity and business ethics (for example, see subpart  42.15);\n\n(e) Have the necessary organization, experience, accounting and operational controls, and technical skills, or the ability to obtain them (including, as appropriate, such elements as production control procedures, property control systems, quality assurance measures, and safety programs applicable to materials to",
+        "source": "far_part_09_contractor_qualifications.txt",
+        "chunk_index": 16,
+        "distance": 0.29468393325805664
+      },
+      {
+        "text": "ture that it affects the present responsibility of the contractor or subcontractor.\n9.406-3 Procedures.\n\n(a) Investigation and referral. Agencies shall establish procedures for the prompt reporting, investigation, and referral to the suspending and debarring official of matters appropriate for that official\u2019s consideration.\n\n(b) Decision-making process.\n\n(1) Agencies shall establish procedures governing the debarment decision-making process that are as informal as is practicable, consistent with principles of fundamental fairness. These procedures shall afford the contractor (and any specifica",
+        "source": "far_part_09_contractor_qualifications.txt",
+        "chunk_index": 215,
+        "distance": 0.33610159158706665
+      },
+      {
+        "text": "ity of its proposed subcontractors.\n9.104 Standards.\n9.104-1 General standards.\n\nTo be determined responsible, a prospective contractor must-\n\n(a) Have adequate financial resources to perform the contract, or the ability to obtain them (see 9.104-3(a));\n\n(b) Be able to comply with the required or proposed delivery or performance schedule, taking into consideration all existing commercial and governmental business commitments;\n\n(c) Have a satisfactory performance record (see 9.104-3 (b) and subpart  42.15). A prospective contractor shall not be determined responsible or nonresponsible solely on",
+        "source": "far_part_09_contractor_qualifications.txt",
+        "chunk_index": 15,
+        "distance": 0.34622180461883545
+      }
+    ],
+    "ratings": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "configuration": "Large",
+    "chunk_size": 600,
+    "overlap": 100,
+    "question": "What requirements or considerations apply to small businesses in federal contracting?",
+    "results": [
+      {
+        "text": "tracts for supplies and services is placed with small business.\n\n(b) Heads of contracting activities are responsible for effectively implementing the small business programs within their activities, including achieving program goals. They are to ensure that contracting and technical personnel maintain knowledge of small business program requirements and take all reasonable action to increase participation in their activities\u2019 contracting processes by these businesses.\n\n(c) The Small Business Act requires each agency with contracting authority to establish an Office of Small and Disadvantaged B",
+        "source": "far_part_19_small_business.txt",
+        "chunk_index": 37,
+        "distance": 0.3098219633102417
+      },
+      {
+        "text": "gency rule with which such business concern must comply in performing such contract other than laws or agency rules with which the small business must comply when doing business with other than the Government.\n19.202-5 Data collection and reporting requirements.\n\nAgencies shall measure the extent of small business participation in their acquisition programs by taking the following actions:\n\n(a) Require each prospective contractor to represent whether it is a small business, veteran-owned small business, service-disabled veteran-owned small business, HUBZone small business, small disadvantaged",
+        "source": "far_part_19_small_business.txt",
+        "chunk_index": 63,
+        "distance": 0.31525272130966187
+      },
+      {
+        "text": "t small business concerns of the Government's intention to bundle the requirement and how small business concerns may contact the appropriate Small Business Administration procurement center representative (see 7.107-5(a)).\n\n(d) See 10.003 for the requirement for a prime contractor to perform market research in contracts in excess of $7.5 million, other than contracts for the acquisition of commercial products or commercial services (section 826 of Pub. L. 110-181).\n10.002 Procedures.\n\n(a) Acquisitions begin with a description of the Government\u2019s needs stated in terms sufficient to allow condu",
+        "source": "far_part_10_market_research.txt",
+        "chunk_index": 9,
+        "distance": 0.3515615463256836
+      }
+    ],
+    "ratings": [
+      null,
+      null,
+      null
+    ]
+  }
+]

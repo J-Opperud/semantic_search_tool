@@ -1,20 +1,11 @@
 from evaluate import load_experiment_results
-
-
-def test_load_experiment_results_missing_file(tmp_path):
-    """Return an empty list when the results file does not exist."""
-
-    path = tmp_path / "experiment_results.json"
-
-    results = load_experiment_results(path)
-
-    assert results == []
-
-
 import json
 
-from evaluate import load_experiment_results
-
+from evaluate import (
+    ExperimentResult,
+    save_experiment_results,
+    load_experiment_results,
+)
 
 def test_load_experiment_results_missing_file(tmp_path):
     """Return an empty list when the results file does not exist."""
@@ -24,6 +15,8 @@ def test_load_experiment_results_missing_file(tmp_path):
     results = load_experiment_results(path)
 
     assert results == []
+
+
 
 
 def test_load_experiment_results_existing_file(tmp_path):
@@ -104,3 +97,48 @@ def test_mean_relevance():
 
     assert calculate_mean_relevance(ratings, k=3) == 1.0
 
+
+def test_experiment_results_persist(tmp_path):
+    results = [
+        ExperimentResult(
+            configuration="baseline",
+            chunk_size=300,
+            overlap=50,
+            question="What is market research?",
+            results=[
+                {
+                    "source": "far_part_10_market_research.txt",
+                    "chunk_index": 21,
+                    "distance": 0.352,
+                    "text": "Market research information...",
+                }
+            ],
+            ratings=["Relevant"],
+        )
+    ]
+
+    path = tmp_path / "experiment_results.json"
+
+    save_experiment_results(results, path)
+
+    assert path.exists()
+
+    loaded_results = load_experiment_results(path)
+
+    assert loaded_results == [
+        {
+            "configuration": "baseline",
+            "chunk_size": 300,
+            "overlap": 50,
+            "question": "What is market research?",
+            "results": [
+                {
+                    "source": "far_part_10_market_research.txt",
+                    "chunk_index": 21,
+                    "distance": 0.352,
+                    "text": "Market research information...",
+                }
+            ],
+            "ratings": ["Relevant"],
+        }
+    ]
