@@ -157,8 +157,14 @@ def calculate_precision_at_k(
     """Calculate precision@k using 'Relevant' results as positive matches.
 
     'Partially Relevant' results are not counted as fully relevant.
+    Unrated results are treated as not relevant.
 
-    Unrated results are ignored rather than treated as irrelevant.
+    Args:
+        ratings: Human relevance ratings ordered by retrieval rank.
+        k: Number of top-ranked results to evaluate.
+
+    Returns:
+        Precision at k as a value between 0.0 and 1.0.
     """
 
     if k is not None:
@@ -167,21 +173,16 @@ def calculate_precision_at_k(
 
         ratings = ratings[:k]
 
-    rated = [
-        rating
-        for rating in ratings
-        if rating is not None and rating != "Not Rated"
-    ]
-
-    if not rated:
+    if not ratings:
         return 0.0
 
     relevant = sum(
         rating == "Relevant"
-        for rating in rated
+        for rating in ratings
     )
 
-    return relevant / len(rated)
+    return relevant / len(ratings)
+
 
 
 def calculate_mean_relevance(
@@ -338,7 +339,17 @@ def update_experiment_ratings(
     ratings_by_result: dict[tuple[str, str], list[str | None]],
     path: Path,
 ) -> None:
-    """Update human relevance ratings for saved experiment results."""
+    """Update human relevance ratings for saved experiment results.
+
+    Args:
+        ratings_by_result: Mapping of
+            (configuration, question) to ratings for each retrieved result.
+        path: Path to the persisted experiment results JSON file.
+
+    Raises:
+        ValueError: If a rating list does not match the number of
+            retrieved results for that experiment result.
+    """
 
     results = load_experiment_results(path)
 
@@ -348,12 +359,33 @@ def update_experiment_ratings(
             result["question"],
         )
 
-        if key in ratings_by_result:
-            result["ratings"] = ratings_by_result[key]
+        if key not in ratings_by_result:
+            continue
+
+        ratings = ratings_by_result[key]
+
+        expected_count = len(result["results"])
+
+        if len(ratings) != expected_count:
+            raise ValueError(
+                f"Rating count mismatch for "
+                f"{result['configuration']} / "
+                f"{result['question']}: "
+                f"expected {expected_count}, "
+                f"received {len(ratings)}."
+            )
+
+        result["ratings"] = ratings
+
+    path.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
 
     path.write_text(
         json.dumps(results, indent=2),
         encoding="utf-8",
     )
+
     
 
